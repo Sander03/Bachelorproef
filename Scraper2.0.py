@@ -50,7 +50,7 @@ for ingredient, amount in zip(getIngredients, getIngredientsAmounts):
     ingredient_name = ingredient.get_text().strip()
     ingredient_amount = amount.get_text().strip()
     ecoscore = get_ecoscore(ingredient_name)
-    total_ecoscore += ecoscore  # Add each ingredient's ecoscore to the total
+    total_ecoscore += ecoscore
     ingredienten.append(f"{ingredient_name} ({ingredient_amount}) - Ecoscore: {ecoscore}")
 
 ingredienten_text = "\n".join(ingredienten)
